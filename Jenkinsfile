@@ -4,6 +4,8 @@ pipeline{
         stage("test"){
             steps{
                 sh ("uname")
+            when {
+                changeset "test"}
                 echo "stage is sucess"
             }
         }
