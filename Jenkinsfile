@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("test"){
             when{
-                changeset "tt"
+                changeset "test"
             }
             steps{
                 sh ("uname")
@@ -12,7 +12,7 @@ pipeline{
         }
         stage("dev"){
             when{
-                changeset "tt"
+                changeset "test"
             }
             steps{
                 sh("free")
